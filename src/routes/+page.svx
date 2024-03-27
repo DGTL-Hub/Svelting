@@ -1,0 +1,123 @@
+---
+layout: default
+title: HELLO PAGE!!!!
+---
+<script>
+	import BentoGrid from '../lib/components/ui/BentoGrid/BentoGrid.svelte';
+	import BentoGridItem from '../lib/components/ui/BentoGrid/BentoGridItem.svelte';
+	import FloatingNavbar from "../lib/components/ui/FloatingNavbar/FloatingNavbar.svelte";
+	import 
+</script>
+
+#  {title}
+## heading 2 
+### heading three
+
+<br>
+<br>
+<br>
+<customBlockquotes>
+what??
+
+
+```'important-blockquote
+hellos here is some quoted text
+
+more text
+
+```
+</customBlockquotes>
+
+```'TIP
+hellos here is some quoted text
+
+more text
+
+```
+:>TIP
+
+```important-blockquote
+AHHHHHH!!!
+```
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<BentoGrid>
+	<BentoGridItem></BentoGridItem>
+	<BentoGridItem></BentoGridItem>
+
+	<BentoGridItem></BentoGridItem>
+	<BentoGridItem></BentoGridItem>
+	<BentoGridItem></BentoGridItem>
+
+
+</BentoGrid>
+
+
+<style>
+.note-blockquote {
+    border-left: 4px solid #0078d4; /* Blue left border */
+    padding: 1em;
+    position: relative;
+}
+
+.tip-blockquote {
+    border-left: 4px solid #107c10; /* Green left border */
+    padding: 1em;
+    position: relative;
+}
+
+.important-blockquote {
+    border-left: 4px solid #8250df; /* Red left border */
+    padding: 1em;
+    position: relative;
+}
+
+.warning-blockquote {
+    border-left: 4px solid #ffc83d; /* Yellow left border */
+    padding: 1em;
+    position: relative;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.caution-blockquote {
+    border-left: 4px solid #d13438; /* Dark red left border */
+    padding: 1em;
+    position: relative;
+    border-radius: 0px 12px 12px 0px;
+}
+
+/* Common styles for icons */
+
+.note-blockquote::before {
+    content: '\24D8 \0020 \0020 \0020 Note';
+    color: #0078d4; /* Blue icon */
+}
+
+.tip-blockquote::before {
+    content: '\1F4A1 \0020 \0020 \0020 Tip';
+    color: #107c10; /* Green icon */
+}
+
+.important-blockquote::before {
+    content: '\272E \0020 \0020 \0020 Important';
+    color: #8250df; /* Red icon */
+}
+
+.warning-blockquote::before {
+    content: '\26A0 \0020 \0020 \0020 Warning';
+    color: #ffc83d; /* Yellow icon */
+}
+
+.caution-blockquote::before {
+    content: '\1F6D1 \0020 \0020 \0020 Caution';
+    color: #d13438; /* Dark red icon */
+}
+
+</style>
